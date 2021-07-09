@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.matthewbretten</groupId>
+    <artifactId>gatling-example-datamodel-pattern</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+
+    <properties>
+        <gatling.charts.highcharts.version>3.3.1</gatling.charts.highcharts.version>
+        <gatling.maven.plugin.version>3.0.5</gatling.maven.plugin.version>
+        <scala.lang.library.version>2.13</scala.lang.library.version>
+        <example.json.data.model.version>1.0.18</example.json.data.model.version>
+        <example.json.test.data.generator.version>1.0.12</example.json.test.data.generator.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.gatling.highcharts</groupId>
+            <artifactId>gatling-charts-highcharts</artifactId>
+            <version>${gatling.charts.highcharts.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.matthewbretten</groupId>
+            <artifactId>example-json-data-model</artifactId>
+            <version>${example.json.data.model.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.matthewbretten</groupId>
+            <artifactId>example-json-test-data-generator</artifactId>
+            <version>${example.json.test.data.generator.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.gatling</groupId>
+                <artifactId>gatling-maven-plugin</artifactId>
+                <version>${gatling.maven.plugin.version}</version>
+                <configuration>
+                    <simulationsFolder>src/test/simulations</simulationsFolder>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

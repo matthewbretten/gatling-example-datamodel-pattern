@@ -1,2 +1,11 @@
 *.class
 *.log
+/.settings
+.project
+.classpath
+*.iml
+.idea
+/bin/
+/target
+/results
+*.kate-swp
