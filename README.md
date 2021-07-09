@@ -4,8 +4,8 @@ Gatling project that uses data model pattern
 This project demonstrates how to use Gatling to call existing data model and data generator Java projects to save having to
 write all your test data code in Scala.
 The projects it depends upon can be viewed here:
-data model - https://github.com/matthewbretten/example-json-data-model
-data generator - https://github.com/matthewbretten/example-json-test-data-generator
+* data model - https://github.com/matthewbretten/example-json-data-model
+* data generator - https://github.com/matthewbretten/example-json-test-data-generator
 
 Prerequisites
 -------------
