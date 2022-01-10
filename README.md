@@ -21,7 +21,7 @@ mvn gatling:test
 ```
 Or specify a test (if there are multiple) by using
 ```bash
-mvn gatling:test -Dgatling.simulationClass=SimpleLoadTest
+mvn gatling:test -Dgatling.simulationClass=simulations.SimpleLoadTest
 ```
 
 Features

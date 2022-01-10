@@ -6,10 +6,10 @@ import com.github.matthewbretten.Basket
 import com.github.matthewbretten.objects.NewBasket
 
 object CustomFeeder {
-    def basket(): FeederBuilder = {
+    def basket(): Iterator[Map[String,Any]] = {
         Iterator.continually{
             val basket: Basket = NewBasket.getBasket()
-            Map(
+            Map[String, Any](
                 ("basket" -> basket.toJson(false))
             )
         }

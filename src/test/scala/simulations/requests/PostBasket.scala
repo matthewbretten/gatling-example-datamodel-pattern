@@ -9,7 +9,7 @@ object PostBasket {
     http("Create new basket")
       .post("/new/basket")
       .header("content-type","application/json")
-      .body(StringBody("${basket}")).asJson
+      .body(StringBody("#{basket}")).asJson
       .check(status.is(200))
   )
 }
